@@ -1,0 +1,15 @@
+<h2>Uncomplete Tasks</h2>
+<% @tasks.each do |task| %>
+  <% unless task.complete %>
+    <article>
+      <p>
+        <%= task.content %>
+        <span><a href="/<%= task.id %>">[edit]</a></span>
+      </p>
+      <div class="time_info">
+        <p class="meta">Created: <%= task.created_at.strftime("%m/%d/%Y at %I:%M%p") %></p>
+        <p class="meta">Last update: <%= task.updated_at.strftime("%m/%d/%Y at %I:%M%p") %></p>
+      </div>
+    </article>
+  <% end %>
+<% end %>

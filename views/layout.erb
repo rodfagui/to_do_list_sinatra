@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf8">
+  <title><%= @title %></title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
+  <link href="/style.css" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-md-10 col-md-offset-1">
+        <header>
+          <hgroup>
+            <h1><a href="/">To-Do List</a></h1>
+            <h2>Remember what you have to do and increase your productivity</h2>
+          </hgroup>
+        </header>
+      </div>
+    </div>
+    
+    <div class="row">
+      <div class="col-md-10 col-md-offset-1">
+        <div class="yield">
+          <%= yield %>
+        </div>
+      </div>
+    </div>
+    
+    <div class="row list">
+      <div class="col-md-10 col-md-offset-1">
+        <a href="/list/complete_tasks" class="btn btn-default" role="button">Complete tasks</a>
+        <a href="/list/uncomplete_tasks" class="btn btn-default" role="button">Uncomplete tasks</a>
+      </div>
+    </div>
+    
+    <div class="row text-center">
+      <div class="col-md-10 col-md-offset-1">
+        <div>
+          <footer>
+            © 2017 <strong>Rod Inc</strong>, All rights reserved
+          </footer>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<section id="add">
+  <form action="/" method="post">
+  	<div class="form-group">
+  	  <textarea class="form-control" rows="3" name="content" placeholder="Your task&hellip;"></textarea>
+  	</div>
+    <button type="submit" class="btn btn-success">Save task!</button>
+  </form>
+</section>
+
+<div class="list">
+  <a href="/list/complete_tasks" class="btn btn-default" role="button">Complete tasks</a>
+  <a href="/list/uncomplete_tasks" class="btn btn-default" role="button">Uncomplete tasks</a>
+</div>
+
+<h2>All Tasks</h2>
+<% @tasks.each do |task| %>
+  <article <%= 'class="complete"' if task.complete %>>
+    <p>
+      <%= task.content %>
+      <span><a href="/<%= task.id %>">[edit]</a></span>
+    </p>
+    <p class="links">
+      <a href="/<%= task.id %>/complete">&#8623;</a>
+    </p>
+    <div class="time_info">
+   	  <p class="meta">Created: <%= task.created_at.strftime("%m/%d/%Y at %I:%M%p") %></p>
+   	  <p class="meta">Last update: <%= task.updated_at.strftime("%m/%d/%Y at %I:%M%p") %></p>
+    </div>
+  </article>
+<% end %>

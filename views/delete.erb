@@ -1,0 +1,12 @@
+<% if @task %>
+  <p>Are you sure you want to delete the following task: <em>"<%= @task.content %>"</em> ?</p>
+  <form action="/<%= @task.id %>" method="post">
+    <input type="hidden" name="_method" value="delete">
+    <div class="form-group">
+      <button type="submit" class="btn btn-danger">Delete Task!</button>
+      <a href="/<%= @task.id %>" class="btn btn-default" role="button">Cancel</a>
+    </div>
+  </form>
+<% else %>
+  <p>Note not found.</p>
+<% end %>

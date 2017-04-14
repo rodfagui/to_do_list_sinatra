@@ -1,0 +1,91 @@
+body{
+	margin-bottom:50px;
+	font-family: 'Roboto', sans-serif;
+}
+
+div header {
+	margin-bottom: 100px;
+}
+
+div header h1 {
+	font-weight: bold;
+	font-size: 50px;
+}
+
+div header h1 a:link, header h1 a:visited {
+  color: #444;
+  text-decoration: none;
+}
+
+div header h2 {
+  font-size: 25px;
+  font-style: italic;
+  color: #999;
+}
+
+section#add {
+	margin-bottom: 40px;
+}
+
+.yield h2 {
+	font-size 30px;
+	font-weight: bold;
+}
+
+article {
+	border: 1px solid #eee;
+	border-top: none;
+	padding: 15px 10px;
+}
+ 
+article:first-of-type {
+  border: 1px solid #eee;
+}
+ 
+article:nth-child(even) {
+  background: #fafafa;
+}
+ 
+article.complete {
+  background: #90EE90;
+}
+ 
+article span {
+  font-size: 0.8em;
+}
+
+.meta {
+  font-size: 0.8em;
+  font-style: italic;
+  color: #888;
+}
+ 
+.links {
+	font-size: 1.8em;
+	line-height: 0.8em;
+	float: right;
+	margin: -10px 0 0;
+}
+ 
+.links a {
+  display: block;
+  text-decoration: none;
+}
+
+div.time_info p{
+	margin-bottom: 0px;
+}
+
+div.list {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+div footer{
+	position:fixed;
+	height:50px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	margin-bottom:0px;
+}
