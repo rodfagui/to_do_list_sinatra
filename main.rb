@@ -37,10 +37,10 @@ get '/list/complete_tasks' do
   erb :complete_tasks
 end
 
-get '/list/uncomplete_tasks' do
+get '/list/incomplete_tasks' do
 	@tasks = Task.all :order => :id.desc
-	@title = 'All Uncomplete Tasks'
-  erb :uncomplete_tasks
+	@title = 'All Incomplete Tasks'
+  erb :incomplete_tasks
 end
 
 get '/:id' do
