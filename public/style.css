@@ -4,7 +4,7 @@ body{
 }
 
 div header {
-	margin-bottom: 100px;
+	margin-bottom: 50px;
 }
 
 div header h1 {
@@ -75,6 +75,7 @@ article span {
 div.time_info p{
 	margin-bottom: 0px;
 }
+
 
 div.list {
 	margin-top: 20px;
