@@ -20,7 +20,7 @@
       <span><a href="/<%= task.id %>">[edit]</a></span>
     </p>
     <p class="links">
-      <a href="/<%= task.id %>/complete">&#8623;</a>
+      <a href="/<%= task.id %>/complete"><span <%= 'class="glyphicon glyphicon-ok"' unless task.complete %><%= 'class="glyphicon glyphicon-remove"' if task.complete %>></span></a>
     </p>
     <div class="time_info">
    	  <p class="meta">Created: <%= task.created_at.strftime("%m/%d/%Y at %I:%M%p") %></p>
