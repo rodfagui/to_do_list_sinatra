@@ -1,0 +1,43 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.5.1)
+      public_suffix (~> 2.0, >= 2.0.2)
+    data_objects (0.10.17)
+      addressable (~> 2.1)
+    dm-core (1.2.1)
+      addressable (~> 2.3)
+    dm-do-adapter (1.2.0)
+      data_objects (~> 0.10.6)
+      dm-core (~> 1.2.0)
+    dm-migrations (1.2.0)
+      dm-core (~> 1.2.0)
+    dm-postgres-adapter (1.2.0)
+      dm-do-adapter (~> 1.2.0)
+      do_postgres (~> 0.10.6)
+    do_postgres (0.10.17-x86-mingw32)
+      data_objects (= 0.10.17)
+    pg (0.20.0-x86-mingw32)
+    public_suffix (2.0.5)
+    rack (1.6.5)
+    rack-protection (1.5.3)
+      rack
+    sinatra (1.4.8)
+      rack (~> 1.5)
+      rack-protection (~> 1.4)
+      tilt (>= 1.3, < 3)
+    tilt (2.0.7)
+
+PLATFORMS
+  x86-mingw32
+
+DEPENDENCIES
+  dm-core
+  dm-migrations
+  dm-postgres-adapter
+  pg
+  rack
+  sinatra
+
+BUNDLED WITH
+   1.14.6
